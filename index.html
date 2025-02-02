@@ -27,29 +27,36 @@
 
 <body class="sora-font">
     <!-- =========Header Section========= -->
-    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-24">
         <!-- ===navbar section=== -->
-        <nav class="lg:max-w-7xl mx-auto p-10 flex items-center justify-between">
+        <nav class="pt-10 flex justify-around lg:max-w-7xl mx-auto">
             <!-- logo -->
             <div class="hidden md:block lg:block">
                 <img src="c2-assets/logo-header.png" alt="">
             </div>
-            <!-- Menus/Pages -->
-            <div class="hidden md:block lg:block absolute left-1/2 transform -translate-x-1/2">
-                <ul class="list-none flex text-xl">
-                    <li class="mx-4">Product</li>
-                    <li class="mx-4">Services</li>
-                    <li class="mx-4">Contact us</li>
-                </ul>
-            </div>
-            <!-- Buttons -->
-            <div class="hidden md:block lg:block items-center space-x-2 ">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <button class="btn btn-outline py-2 px-7">Login</button>
-                <button class="btn bg-[#179800] text-white py-2 px-7">Primary</button>
+
+            <!-- menus & buttons container -->
+            <div class="flex gap-28 items-center">
+                <!-- Menus/Pages -->
+                <div class="hidden md:block lg:block">
+                    <ul class="list-none flex text-xl space-x-8">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <!-- Buttons -->
+                <div class="hidden md:block lg:block items-center space-x-2 ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="btn btn-outline py-2 px-7">Login</button>
+                    <button class="btn bg-[#179800] text-white py-2 px-7">Primary</button>
+                </div>
             </div>
 
+
+        </nav>
+        <nav class="flex justify-between">
             <!-- logo for sm -->
             <div class="block md:hidden lg:hidden">
                 <img class="pl-4" src="c2-assets/leaf.png" alt="">
@@ -63,7 +70,7 @@
         <!-- ===content section=== -->
         <div class="relative p-9 text-center lg:max-w-5xl mx-auto my-11">
             <!-- text section -->
-            <h1 class="text-3xl font-bold mb-4">
+            <h1 class="text-6xl font-bold mb-4">
                 Freshness <span class="text-green-700">You Can Count</span> On, Prices You’ll Love!
             </h1>
             <p class="max-w-2xl mx-auto">
@@ -77,11 +84,11 @@
     <!-- =========Main Section========= -->
     <main>
         <!-- =========Service Section========= -->
-        <section class="p-8 mb-20 lg:mb-0:32 lg:max-w-7xl mx-auto">
+        <section class="mb-20 lg:max-w-7xl mx-auto mb-24">
             <!-- Service title -->
-            <h2 class="text-[#179800] text-4xl font-bold mb-6">Services</h2>
+            <h2 class="text-[#179800] text-4xl font-bold mb-6 ml-10">Services</h2>
             <!-- Service cards -->
-            <div class="flex flex-col p-1 gap-6 lg:flex-row">
+            <div class="flex items-center justify-center flex-col p-1 gap-6 lg:flex-row">
                 <!-- Service card 1 -->
                 <div class="card bg-[#EFEBE3] w-96 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -118,13 +125,13 @@
             </div>
         </section>
         <!-- =========Popular Products Section========= -->
-        <section class="bg-[#EFEBE3] p-2 py-32">
-            <!-- container -->
-            <div class="lg:max-w-7xl mx-auto">
+        <section class="bg-[#EFEBE3] p-2 py-32 mb-24">
+            <!-- Popular Products container -->
+            <div class="lg:max-w-7xl lg:mx-auto">
                 <!-- Products title -->
-                <h2 class="text-[#179800] text-4xl font-bold mb-12">Popular Products</h2>
-                <!-- Content -->
-                <div>
+                <h2 class="text-[#179800] text-4xl font-bold mb-12 ml-10">Popular Products</h2>
+                <!-- Image Content -->
+                <div class="p-2 flex items-center justify-around flex-col gap-6 lg:flex-row lg:gap-6">
                     <!-- discount card -->
                     <div
                         class="relative bg-gradient-to-br from-[#53DB3A] from-25.666% to-white to-108.596% p-12 rounded-xl w-[440px] h-[400px]">
@@ -135,8 +142,160 @@
                             </p>
                             <button class="btn bg-white px-7">Buy Now</button>
                         </div>
-                        <img class="absolute top-[145px] left-[160px]" src="c2-assets/vegetable-offer.png" alt="">
+                        <img class="absolute top-[145px] left-[160px] lg:left-[150px]"
+                            src="c2-assets/vegetable-offer.png" alt="">
                     </div>
+                    <!-- Other Items -->
+                    <div class="grid grid-cols-2 gap-2 lg:grid-cols-3">
+
+                        <!-- Item 1 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 7 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 8 -->
+                        <div class="w-52 h-24 pl-4 flex items-center gap-3 bg-white rounded-lg lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 9 -->
+                        <div
+                            class="invisible lg:pl-4 lg:flex items-center gap-3 bg-white rounded-lg lg:visible lg:w-56 lg:h-28">
+                            <!-- small image -->
+                            <img class=" bg-[#EFEBE3] rounded-lg" src="c2-assets/onion.png" alt="">
+                            <!-- Image info & ratings -->
+                            <div>
+                                <p><i class="fa-solid fa-star text-yellow-400"></i> 4.5</p>
+                                <h2 class="lg:text-xl">Onion 1 KG</h2>
+                                <h3>$39.99</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========Arrival & Offers Section========= -->
+        <section class="mb-24">
+            <!-- Container -->
+            <div class="lg:max-w-7xl mx-auto">
+                <h2 class="text-[#179800] text-4xl font-bold mb-6 ml-10">Arrivals & Offers</h2>
+                <!-- Offers Container -->
+                <div class="flex flex-col items-center justify-center gap-2 lg:flex-row lg:gap-5">
+                    <!-- Offer Card 1 -->
+                    <div class="bg-green-900  rounded-lg flex p-3 lg:max-w-3xl lg:h-80  lg:p-12 lg:pb-0">
+                        <!-- text content -->
+                        <div class="flex flex-col items-center">
+                            <img class="mb-6" src="c2-assets/dawat-logo.png" alt="">
+                            <button class="btn bg-[#63B76D] text-white border-none mb-6">Cook Exotic Dishes</button>
+                            <h2 class="text-white text-4xl font-bold">UP to <span>20% OFF</span></h2>
+                        </div>
+                        <!-- image content -->
+                        <div class="w-80 overflow-auto">
+                            <img class="w-full" src="c2-assets/dawat-mock-up.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Offer Card 2 -->
+                    <div class="bg-blue-950 rounded-lg flex p-3 lg:max-w-xl lg:h-80  lg:p-12 lg:pb-0">
+                        <!-- text content -->
+                        <div class="flex flex-col items-center">
+                            <img class="mb-6" src="c2-assets/dawat-logo.png" alt="">
+                            <button class="btn bg-blue-900 text-white border-none mb-6">World’s No.1 Rice</button>
+                            <h2 class="text-white text-4xl font-bold">UP to <span>40% OFF</span></h2>
+                        </div>
+                        <!-- image content -->
+                        <div class="w-44 overflow-auto">
+                            <img class="w-full" src="c2-assets/india-gate-mock-up.png" alt="">
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
