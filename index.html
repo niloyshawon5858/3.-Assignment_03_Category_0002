@@ -299,10 +299,10 @@
         </section>
     </main>
     <!-- =========Footer Section========= -->
-    <footer>
-        <!-- Grocery News Section -->
+    <footer class="relative mt-96">
+        <!-- =========Grocery News Section========= -->
         <section
-            class="bg-[#EFEBE3] rounded-xl min-w-80 flex flex-col gap-6 p-14 lg:max-w-[1320px] lg:mx-auto lg:flex-row lg:items-center lg:justify-around">
+            class="bg-[#EFEBE3] rounded-xl min-w-80 flex flex-col items-center gap-6 p-14 absolute left-20 right-20 -top-72 lg:max-w-[1320px] lg:mx-auto lg:flex-row lg:items-center lg:justify-around lg:left-32 lg:right-32 lg:-top-64">
             <!-- Grocery image -->
             <div>
                 <img src="c2-assets/vegetable-busket.png" alt="">
@@ -313,13 +313,48 @@
                 <p class="font-semibold text-sm lg:text-base ">Exclusive training tips, ticks, product deals and more.
                 </p>
 
-                <input class="bg-white rounded-lg max-w-xl py-5 px-2 lg:min-w-96" type="email" name="enter email"
+                <input class="bg-white rounded-lg max-w-xl py-5 px-14  lg:min-w-96" type="email" name="enter email"
                     placeholder="Enter email....">
 
                 <br>
                 <button class="btn bg-[#179800] text-white py-2 px-7">Subscribe</button>
             </div>
         </section>
+        <!-- =========Main Footer Section========= -->
+        <section class="max-w-screen-2xl bg-[#179800]  lg:max-h-[658px] ">
+            <!-- ===All Columns -->
+            <div class="pt-[370px] px-5 pb-12 lg:px-36 lg:pb-36 lg:flex lg:items-center">
+                <!-- Brand Column -->
+                <div class="mb-9 lg:mr-40">
+                    <img class="mb-3" src="c2-assets/logo-footer.png" alt="">
+                    <h3 class="text-xl text-[#FFFFFFB3]">Discover a world of treats, toys, and <br> essentials
+                        handpicked for your furry <br class="hidden lg:block"> friends</h3>
+                </div>
+                <!-- Menus Column -->
+                <div class="mr-96">
+                    <ul class="list-none text-xl text-[#EFEBE3] space-y-5">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <!-- Social Column -->
+                <div class="mt-20">
+                    <h3 class="text-[#EFEBE3] text-base font-medium">Follow US</h3>
+                    <!-- icons -->
+                    <div class="flex gap-7">
+                        <img src="c2-assets/fb.png" alt="">
+                        <img src="c2-assets/insta.png" alt="">
+                        <img src="c2-assets/linkedin.png" alt="">
+                        <img src="c2-assets/youtube.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
     </footer>
 
 </body>
